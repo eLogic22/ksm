@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script>
+        (function () {
+            var p = location.pathname;
+            if (/[^/]+\.html?$/i.test(p)) p = p.slice(0, p.lastIndexOf('/') + 1);
+            else if (!p.endsWith('/')) p += '/';
+            document.write('<base href="' + p + '">');
+        })();
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media &amp; News - KSM Cricket Academy</title>
+    <meta name="description" content="Latest news, media coverage and announcements from KSM Cricket Academy across India.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-left">
+                <span><i class="fa-solid fa-phone"></i> +91 1800-XXX-XXXX</span>
+                <span><i class="fa-solid fa-envelope"></i> info@ksmcricketacademy.com</span>
+            </div>
+            <div class="top-bar-right">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <header class="site-header">
+        <div class="container nav-wrapper">
+            <a href="index.html" class="logo">
+                <span class="logo-icon"><i class="fa-solid fa-baseball"></i></span>
+                <span>KSM<small style="color:#0a1929;font-weight:600;display:block;font-size:.7rem;letter-spacing:1px">CRICKET ACADEMY</small></span>
+            </a>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="team.html">Our Team</a></li>
+                    <li><a href="technology.html">Technology</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="media.html" class="active">Media</a></li>
+                    <li><a href="franchise.html">Franchise</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="registration.html" class="nav-cta">Register</a></li>
+                </ul>
+            </nav>
+            <button class="menu-toggle" aria-label="Toggle menu"><i class="fa-solid fa-bars"></i></button>
+        </div>
+    </header>
+
+    <section class="page-banner">
+        <div class="container">
+            <h1>Media &amp; News</h1>
+            <div class="breadcrumb">
+                <a href="index.html">Home</a> <span>/</span> <span>Media</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="news">
+        <div class="container">
+            <div class="section-header">
+                <span class="eyebrow">Latest News</span>
+                <h2>KSM Hyderabad - News &amp; Updates</h2>
+                <p>Stay updated with the latest happenings, training camps, achievements and announcements from KSM Cricket Academy, Hyderabad.</p>
+            </div>
+
+            <div class="news-grid">
+                <article class="news-card">
+                    <div class="news-image">
+                        <img src="https://images.unsplash.com/photo-1531415074968-036ba1b575da?auto=format&fit=crop&w=800&q=80"
+                             onerror="this.onerror=null;this.src='https://images.pexels.com/photos/163452/cricket-cricket-ball-cricketing-ball-163452.jpeg?auto=compress&cs=tinysrgb&w=800';"
+                             alt="News">
+                        <span class="news-tag">Selection</span>
+                    </div>
+                    <div class="news-body">
+                        <div class="news-date"><i class="fa-regular fa-calendar"></i> January 10, 2026</div>
+                        <h3><a href="#">KSM Hyderabad Hosts Annual Selection Trials at Nadargul Ground</a></h3>
+                        <p>Over 300 young cricketers from across Telangana participated in our annual selection trials at the Nadargul ground in Adibatla.</p>
+                        <a href="#" class="read-more">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="news-card">
+                    <div class="news-image">
+                        <img src="https://images.unsplash.com/photo-1540747913346-19e32dc3e97e?auto=format&fit=crop&w=800&q=80"
+                             onerror="this.onerror=null;this.src='https://images.pexels.com/photos/3628912/pexels-photo-3628912.jpeg?auto=compress&cs=tinysrgb&w=800';"
+                             alt="News">
+                        <span class="news-tag">Launch</span>
+                    </div>
+                    <div class="news-body">
+                        <div class="news-date"><i class="fa-regular fa-calendar"></i> January 6, 2026</div>
+                        <h3><a href="#">New Indoor Training Facility Launched at KSM Hyderabad</a></h3>
+                        <p>State-of-the-art indoor nets, bowling machines and video analysis equipment are now operational at KSM Hyderabad.</p>
+                        <a href="#" class="read-more">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="news-card">
+                    <div class="news-image">
+                        <img src="https://images.unsplash.com/photo-1593766787879-1a32fb6ab2b8?auto=format&fit=crop&w=800&q=80"
+                             onerror="this.onerror=null;this.src='https://images.pexels.com/photos/3621104/pexels-photo-3621104.jpeg?auto=compress&cs=tinysrgb&w=800';"
+                             alt="News">
+                        <span class="news-tag">Event</span>
+                    </div>
+                    <div class="news-body">
+                        <div class="news-date"><i class="fa-regular fa-calendar"></i> December 28, 2025</div>
+                        <h3><a href="#">Cricket Masterclass Held at KSM Academy Hyderabad</a></h3>
+                        <p>An exclusive masterclass brought together top students at our Adibatla campus for a day of elite coaching and mentorship.</p>
+                        <a href="#" class="read-more">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="news-card">
+                    <div class="news-image">
+                        <img src="https://images.unsplash.com/photo-1607890262934-a0d8f6dee0a1?auto=format&fit=crop&w=800&q=80"
+                             onerror="this.onerror=null;this.src='https://images.pexels.com/photos/1661950/pexels-photo-1661950.jpeg?auto=compress&cs=tinysrgb&w=800';"
+                             alt="News">
+                        <span class="news-tag">Selection</span>
+                    </div>
+                    <div class="news-body">
+                        <div class="news-date"><i class="fa-regular fa-calendar"></i> December 21, 2025</div>
+                        <h3><a href="#">8 KSM Students Selected for Telangana U-19 Squad</a></h3>
+                        <p>A proud moment for KSM Hyderabad as 8 of our trainees were selected for the Telangana state under-19 squad this season.</p>
+                        <a href="#" class="read-more">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="news-card">
+                    <div class="news-image">
+                        <img src="https://images.unsplash.com/photo-1571117645522-c08f47483dca?auto=format&fit=crop&w=800&q=80"
+                             onerror="this.onerror=null;this.src='https://images.pexels.com/photos/163452/cricket-cricket-ball-cricketing-ball-163452.jpeg?auto=compress&cs=tinysrgb&w=800';"
+                             alt="News">
+                        <span class="news-tag">Achievement</span>
+                    </div>
+                    <div class="news-body">
+                        <div class="news-date"><i class="fa-regular fa-calendar"></i> November 18, 2025</div>
+                        <h3><a href="#">KSM Hyderabad Wins Inter-Academy U-16 Tournament</a></h3>
+                        <p>Our U-16 squad lifted the inter-academy tournament trophy in Hyderabad, beating five other academies on the way.</p>
+                        <a href="#" class="read-more">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="news-card">
+                    <div class="news-image">
+                        <img src="https://images.unsplash.com/photo-1624965456786-bef897649c5e?auto=format&fit=crop&w=800&q=80"
+                             onerror="this.onerror=null;this.src='https://images.pexels.com/photos/163452/cricket-cricket-ball-cricketing-ball-163452.jpeg?auto=compress&cs=tinysrgb&w=800';"
+                             alt="News">
+                        <span class="news-tag">Event</span>
+                    </div>
+                    <div class="news-body">
+                        <div class="news-date"><i class="fa-regular fa-calendar"></i> October 15, 2025</div>
+                        <h3><a href="#">KSM Hyderabad Hosts Summer Coaching Camp 2025</a></h3>
+                        <p>More than 150 children participated in our summer coaching camp, learning the fundamentals of cricket from our certified coaches.</p>
+                        <a href="#" class="read-more">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="news-card">
+                    <div class="news-image">
+                        <img src="https://images.unsplash.com/photo-1606925797300-0b35e9d1794e?auto=format&fit=crop&w=800&q=80"
+                             onerror="this.onerror=null;this.src='https://images.pexels.com/photos/3661193/pexels-photo-3661193.jpeg?auto=compress&cs=tinysrgb&w=800';"
+                             alt="News">
+                        <span class="news-tag">Media</span>
+                    </div>
+                    <div class="news-body">
+                        <div class="news-date"><i class="fa-regular fa-calendar"></i> September 5, 2025</div>
+                        <h3><a href="#">Hyderabad Cricket Association Visits KSM Adibatla Campus</a></h3>
+                        <p>HCA officials visited the KSM Adibatla campus and praised the world-class infrastructure and coaching standards.</p>
+                        <a href="#" class="read-more">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="news-card">
+                    <div class="news-image">
+                        <img src="https://images.unsplash.com/photo-1599058917765-a780eda07a3e?auto=format&fit=crop&w=800&q=80"
+                             onerror="this.onerror=null;this.src='https://images.pexels.com/photos/3628912/pexels-photo-3628912.jpeg?auto=compress&cs=tinysrgb&w=800';"
+                             alt="News">
+                        <span class="news-tag">Community</span>
+                    </div>
+                    <div class="news-body">
+                        <div class="news-date"><i class="fa-regular fa-calendar"></i> August 12, 2025</div>
+                        <h3><a href="#">Free Trial Camp for Underprivileged Children at Nadargul</a></h3>
+                        <p>KSM organised a free 5-day cricket camp for underprivileged children from nearby Adibatla and Nadargul villages.</p>
+                        <a href="#" class="read-more">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="news-card">
+                    <div class="news-image">
+                        <img src="https://images.unsplash.com/photo-1531415074968-036ba1b575da?auto=format&fit=crop&w=800&q=80"
+                             onerror="this.onerror=null;this.src='https://images.pexels.com/photos/1661950/pexels-photo-1661950.jpeg?auto=compress&cs=tinysrgb&w=800';"
+                             alt="News">
+                        <span class="news-tag">Achievement</span>
+                    </div>
+                    <div class="news-body">
+                        <div class="news-date"><i class="fa-regular fa-calendar"></i> July 20, 2025</div>
+                        <h3><a href="#">KSM Trainees Shine in Hyderabad District Trials</a></h3>
+                        <p>Five KSM students secured spots in the Hyderabad district U-14 and U-16 squads after impressive performances in trials.</p>
+                        <a href="#" class="read-more">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col footer-about">
+                    <a href="index.html" class="logo" style="color:#fff;margin-bottom:20px">
+                        <span class="logo-icon"><i class="fa-solid fa-baseball"></i></span>
+                        <span style="color:#fff">KSM<small style="color:#fff;font-weight:500;display:block;font-size:.7rem;letter-spacing:1px;opacity:.85">CRICKET ACADEMY</small></span>
+                    </a>
+                    <p>Armed with a strong curriculum and the best from the cricket world, KSM Academy promises to polish the future of Indian cricket.</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="team.html">Our Team</a></li>
+                        <li><a href="technology.html">Technology</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Resources</h4>
+                    <ul class="footer-links">
+                        <li><a href="registration.html">Registration</a></li>
+                        <li><a href="franchise.html">Franchise</a></li>
+                        <li><a href="media.html">Media</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Info</h4>
+                    <ul class="footer-contact">
+                        <li><i class="fa-solid fa-location-dot"></i> KSM Cricket Academy, Nadargul Rural, Adibatla, Telangana - 501510</li>
+                        <li><i class="fa-solid fa-phone"></i> 1800-XXX-XXXX</li>
+                        <li><i class="fa-solid fa-envelope"></i> info@ksmcricketacademy.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">&copy; <span id="current-year">2026</span> KSM Cricket Academy. All Rights Reserved.</div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/911800XXXXXXX" class="whatsapp-float" target="_blank" aria-label="WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <script src="main.js"></script>
+</body>
+</html>

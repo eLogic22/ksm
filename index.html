@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script>
+        (function () {
+            var p = location.pathname;
+            if (/[^/]+\.html?$/i.test(p)) p = p.slice(0, p.lastIndexOf('/') + 1);
+            else if (!p.endsWith('/')) p += '/';
+            document.write('<base href="' + p + '">');
+        })();
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KSM Cricket Academy - Best Cricket Coaching | Train. Believe. Achieve.</title>
+    <meta name="description" content="KSM Cricket Academy offers world-class cricket coaching, technology-enabled training and a strong network of centres across India for aspiring cricketers.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-left">
+                <span><i class="fa-solid fa-phone"></i> +91 1800-XXX-XXXX</span>
+                <span><i class="fa-solid fa-envelope"></i> info@ksmcricketacademy.com</span>
+            </div>
+            <div class="top-bar-right">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header / Navigation -->
+    <header class="site-header">
+        <div class="container nav-wrapper">
+            <a href="index.html" class="logo">
+                <span class="logo-icon"><i class="fa-solid fa-baseball"></i></span>
+                <span>KSM<small style="color:#0a1929;font-weight:600;display:block;font-size:.7rem;letter-spacing:1px">CRICKET ACADEMY</small></span>
+            </a>
+
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="team.html">Our Team</a></li>
+                    <li><a href="technology.html">Technology</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="media.html">Media</a></li>
+                    <li><a href="franchise.html">Franchise</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="registration.html" class="nav-cta">Register</a></li>
+                </ul>
+            </nav>
+
+            <button class="menu-toggle" aria-label="Toggle menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Slider -->
+    <section class="hero">
+        <div class="hero-slide hero-slide-1 active">
+            <div class="container">
+                <div class="hero-content">
+                    <span class="hero-eyebrow">Scholarship Open</span>
+                    <h1>Join the KSM National Cricket Scholarship 2026</h1>
+                    <p>Unlock your cricketing potential with world-class coaching, cutting-edge analytics and mentorship from cricket legends.</p>
+                    <div class="hero-cta-group">
+                        <a href="registration.html" class="btn btn-accent">Apply Now</a>
+                        <a href="about.html" class="btn btn-outline">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-slide hero-slide-2">
+            <div class="container">
+                <div class="hero-content">
+                    <span class="hero-eyebrow">Test Your Limits</span>
+                    <h1>Challenge Your Mind. Win the Battle.</h1>
+                    <p>Train with the best. Develop the skills, mindset and discipline of an international cricketer at KSM Academy.</p>
+                    <div class="hero-cta-group">
+                        <a href="registration.html" class="btn btn-accent">Register Today</a>
+                        <a href="technology.html" class="btn btn-outline">Our Technology</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-slide hero-slide-3">
+            <div class="container">
+                <div class="hero-content">
+                    <span class="hero-eyebrow">Innovative Coaching</span>
+                    <h1>Player Analytics &amp; Cutting Edge Tech</h1>
+                    <p>Performance data, video analysis and AI-driven insights to help every player reach their peak.</p>
+                    <div class="hero-cta-group">
+                        <a href="technology.html" class="btn btn-accent">Explore Tech</a>
+                        <a href="centres.html" class="btn btn-outline">Our Centres</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-controls">
+            <span class="hero-dot active"></span>
+            <span class="hero-dot"></span>
+            <span class="hero-dot"></span>
+        </div>
+
+        <i class="fa-solid fa-baseball hero-deco hero-deco-1"></i>
+        <i class="fa-solid fa-trophy hero-deco hero-deco-2"></i>
+        <i class="fa-solid fa-medal hero-deco hero-deco-3"></i>
+        <i class="fa-solid fa-baseball-bat-ball hero-deco hero-deco-4"></i>
+
+        <div class="hero-scroll-indicator">
+            Scroll Down
+            <i class="fa-solid fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- Stats -->
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item reveal">
+                    <div class="stat-icon"><i class="fa-solid fa-user-graduate"></i></div>
+                    <span class="stat-number" data-target="500" data-suffix="+">0</span>
+                    <span class="stat-label">Students Trained</span>
+                </div>
+                <div class="stat-item reveal" data-delay="100">
+                    <div class="stat-icon"><i class="fa-solid fa-chalkboard-user"></i></div>
+                    <span class="stat-number" data-target="12" data-suffix="+">0</span>
+                    <span class="stat-label">Certified Coaches</span>
+                </div>
+                <div class="stat-item reveal" data-delay="200">
+                    <div class="stat-icon"><i class="fa-solid fa-trophy"></i></div>
+                    <span class="stat-number" data-target="40" data-suffix="+">0</span>
+                    <span class="stat-label">Tournaments Won</span>
+                </div>
+                <div class="stat-item reveal" data-delay="300">
+                    <div class="stat-icon"><i class="fa-solid fa-medal"></i></div>
+                    <span class="stat-number" data-target="25" data-suffix="+">0</span>
+                    <span class="stat-label">State Selections</span>
+                </div>
+                <div class="stat-item reveal" data-delay="400">
+                    <div class="stat-icon"><i class="fa-solid fa-award"></i></div>
+                    <span class="stat-number" data-target="50" data-suffix="+">0</span>
+                    <span class="stat-label">Scholarships</span>
+                </div>
+                <div class="stat-item reveal" data-delay="500">
+                    <div class="stat-icon"><i class="fa-solid fa-calendar-check"></i></div>
+                    <span class="stat-number" data-target="8" data-suffix="+">0</span>
+                    <span class="stat-label">Years Experience</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Story -->
+    <section class="story">
+        <div class="container">
+            <div class="story-grid">
+                <div class="story-image reveal reveal-left">
+                    <img src="https://images.unsplash.com/photo-1540747913346-19e32dc3e97e?auto=format&fit=crop&w=900&q=80"
+                         onerror="this.onerror=null;this.src='https://images.pexels.com/photos/3628912/pexels-photo-3628912.jpeg?auto=compress&cs=tinysrgb&w=900';"
+                         alt="KSM Cricket Academy Training">
+                </div>
+                <div class="story-content reveal reveal-right">
+                    <span class="eyebrow">Our Story</span>
+                    <h2>A Legacy of Cricketing Excellence in Hyderabad</h2>
+                    <p>KSM Cricket Academy is built on the principle of nurturing world-class cricketers through innovation, dedication and a culture of giving back to the community. We are one of Hyderabad's leading cricket academies.</p>
+                    <p>With our cutting-edge, technology-enabled curriculum, certified coaches and a world-class ground at <strong>Nadargul, Adibatla</strong>, we provide elite cricket coaching to national and international cricket aspirants from across Telangana.</p>
+
+                    <div class="progress-list">
+                        <div class="progress-item">
+                            <div class="progress-label"><span>Coaching Skills</span><span>98%</span></div>
+                            <div class="progress-bar"><span style="width:98%"></span></div>
+                        </div>
+                        <div class="progress-item">
+                            <div class="progress-label"><span>Technology</span><span>95%</span></div>
+                            <div class="progress-bar"><span style="width:95%"></span></div>
+                        </div>
+                        <div class="progress-item">
+                            <div class="progress-label"><span>Player Satisfaction</span><span>97%</span></div>
+                            <div class="progress-bar"><span style="width:97%"></span></div>
+                        </div>
+                        <div class="progress-item">
+                            <div class="progress-label"><span>Nutrition &amp; Skills Upgrade</span><span>92%</span></div>
+                            <div class="progress-bar"><span style="width:92%"></span></div>
+                        </div>
+                    </div>
+
+                    <a href="about.html" class="btn btn-primary" style="margin-top:25px">Read More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section class="features">
+        <div class="container">
+            <div class="section-header">
+                <span class="eyebrow">Why Choose Us</span>
+                <h2>What Makes KSM Different</h2>
+                <p>A holistic cricketing experience combining elite coaching, technology, fitness and wellness for every aspiring cricketer.</p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card reveal">
+                    <div class="feature-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                    <h3>Learning Excellence</h3>
+                    <p>A practice-based curriculum specially designed for every aspect of the game, from technique to strategy.</p>
+                </div>
+                <div class="feature-card reveal" data-delay="100">
+                    <div class="feature-icon"><i class="fa-solid fa-heart-pulse"></i></div>
+                    <h3>Wellness &amp; Wellbeing</h3>
+                    <p>Students experience a sense of harmony, maintain motivation and support each other through every challenge.</p>
+                </div>
+                <div class="feature-card reveal" data-delay="200">
+                    <div class="feature-icon"><i class="fa-solid fa-microchip"></i></div>
+                    <h3>Technology Tools</h3>
+                    <p>State-of-the-art technology helps us analyse and leverage performance for every student we train.</p>
+                </div>
+                <div class="feature-card reveal">
+                    <div class="feature-icon"><i class="fa-solid fa-dumbbell"></i></div>
+                    <h3>Focus on Fitness</h3>
+                    <p>Trained physiotherapists provide regular sessions to ensure optimum fitness levels of all students.</p>
+                </div>
+                <div class="feature-card reveal" data-delay="100">
+                    <div class="feature-icon"><i class="fa-solid fa-medal"></i></div>
+                    <h3>Certified Experts</h3>
+                    <p>Coaches certified by ICC, BCCI and NIS lead our team and provide individual guidance to every student.</p>
+                </div>
+                <div class="feature-card reveal" data-delay="200">
+                    <div class="feature-icon"><i class="fa-solid fa-apple-whole"></i></div>
+                    <h3>Health Advisors</h3>
+                    <p>Access to professional nutritionists and sports psychologists to develop healthy habits and mental resilience.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Programs Section -->
+    <section class="programs">
+        <div class="container">
+            <div class="section-header">
+                <span class="eyebrow">Our Programs</span>
+                <h2>Cricket Programs for Every Age</h2>
+                <p>From budding beginners to aspiring professionals, we have a structured pathway designed for every level of cricketer.</p>
+            </div>
+
+            <div class="programs-grid">
+                <div class="program-card reveal">
+                    <div class="program-image">
+                        <img src="https://images.unsplash.com/photo-1531415074968-036ba1b575da?auto=format&fit=crop&w=800&q=80"
+                             onerror="this.onerror=null;this.src='https://images.pexels.com/photos/163452/cricket-cricket-ball-cricketing-ball-163452.jpeg?auto=compress&cs=tinysrgb&w=800';"
+                             alt="Junior Program">
+                        <span class="program-badge">5 - 12 yrs</span>
+                    </div>
+                    <div class="program-body">
+                        <h3>Junior Cricket Program</h3>
+                        <p>Fun-based introduction to cricket fundamentals, building hand-eye coordination, balance, basic batting, bowling and fielding skills.</p>
+                        <div class="program-meta">
+                            <span><i class="fa-regular fa-clock"></i> 2 hr / session</span>
+                            <span><i class="fa-regular fa-calendar"></i> 3 days / week</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="program-card reveal" data-delay="100">
+                    <div class="program-image">
+                        <img src="https://images.unsplash.com/photo-1540747913346-19e32dc3e97e?auto=format&fit=crop&w=800&q=80"
+                             onerror="this.onerror=null;this.src='https://images.pexels.com/photos/3628912/pexels-photo-3628912.jpeg?auto=compress&cs=tinysrgb&w=800';"
+                             alt="Sub-Junior Program">
+                        <span class="program-badge">13 - 15 yrs</span>
+                    </div>
+                    <div class="program-body">
+                        <h3>Sub-Junior Program</h3>
+                        <p>Technique refinement, match awareness, situational drills, fitness training and introduction to the mental side of the game.</p>
+                        <div class="program-meta">
+                            <span><i class="fa-regular fa-clock"></i> 2.5 hr / session</span>
+                            <span><i class="fa-regular fa-calendar"></i> 5 days / week</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="program-card reveal" data-delay="200">
+                    <div class="program-image">
+                        <img src="https://images.unsplash.com/photo-1593766787879-1a32fb6ab2b8?auto=format&fit=crop&w=800&q=80"
+                             onerror="this.onerror=null;this.src='https://images.pexels.com/photos/3621104/pexels-photo-3621104.jpeg?auto=compress&cs=tinysrgb&w=800';"
+                             alt="Senior Program">
+                        <span class="program-badge">16 - 19 yrs</span>
+                    </div>
+                    <div class="program-body">
+                        <h3>Senior Cricket Program</h3>
+                        <p>Match-readiness training, advanced techniques, video analysis, performance tracking and preparation for district / state trials.</p>
+                        <div class="program-meta">
+                            <span><i class="fa-regular fa-clock"></i> 3 hr / session</span>
+                            <span><i class="fa-regular fa-calendar"></i> 6 days / week</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="program-card reveal" data-delay="300">
+                    <div class="program-image">
+                        <img src="https://images.unsplash.com/photo-1607890262934-a0d8f6dee0a1?auto=format&fit=crop&w=800&q=80"
+                             onerror="this.onerror=null;this.src='https://images.pexels.com/photos/1661950/pexels-photo-1661950.jpeg?auto=compress&cs=tinysrgb&w=800';"
+                             alt="Pro Program">
+                        <span class="program-badge">Pro / Elite</span>
+                    </div>
+                    <div class="program-body">
+                        <h3>Pro / Elite Program</h3>
+                        <p>Specialised one-on-one coaching for serious aspirants targeting Ranji, IPL trials and international cricket pathways.</p>
+                        <div class="program-meta">
+                            <span><i class="fa-regular fa-clock"></i> Custom</span>
+                            <span><i class="fa-regular fa-calendar"></i> By invitation</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center" style="margin-top:40px">
+                <a href="registration.html" class="btn btn-primary">Enrol in a Program</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section>
+        <div class="container">
+            <div class="section-header">
+                <span class="eyebrow">Testimonials</span>
+                <h2>What Parents &amp; Students Say</h2>
+                <p>Hear from the families who trust KSM Cricket Academy with their cricketing dreams.</p>
+            </div>
+
+            <div class="testimonials-grid">
+                <div class="testimonial-card reveal">
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+                    <p>Enrolling at KSM Hyderabad is the best step towards focused coaching for my son's cricketing passion. He now understands and follows the game with much more focus and a clear plan.</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">KR</div>
+                        <div>
+                            <div class="author-name">Kritika Ramesh</div>
+                            <div class="author-role">Parent of Rishab Ramesh</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card reveal" data-delay="150">
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+                    <p>We hope KSM continues to provide great support and help our son become a true sportsman. We look forward to him becoming better each day with your coaching at Nadargul.</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">VR</div>
+                        <div>
+                            <div class="author-name">Mr. Verendra Raina</div>
+                            <div class="author-role">Father of Shalien Raina</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card reveal" data-delay="300">
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+                    <p>Sahil really enjoys KSM Hyderabad and the way coaches take care of the kids sets this academy apart from others. Highly recommend KSM to other parents in Telangana.</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">AK</div>
+                        <div>
+                            <div class="author-name">Mrs. Arpita Krishna</div>
+                            <div class="author-role">Mother of Sahil Krishna</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- News Section -->
+    <section class="news">
+        <div class="container">
+            <div class="section-header">
+                <span class="eyebrow">Media Coverage</span>
+                <h2>Latest News &amp; Updates</h2>
+                <p>Stay updated with our latest centre launches, masterclasses and milestones.</p>
+            </div>
+
+            <div class="news-grid">
+                <article class="news-card reveal">
+                    <div class="news-image">
+                        <img src="https://images.unsplash.com/photo-1531415074968-036ba1b575da?auto=format&fit=crop&w=800&q=80"
+                             onerror="this.onerror=null;this.src='https://images.pexels.com/photos/163452/cricket-cricket-ball-cricketing-ball-163452.jpeg?auto=compress&cs=tinysrgb&w=800';"
+                             alt="News">
+                        <span class="news-tag">Selection</span>
+                    </div>
+                    <div class="news-body">
+                        <div class="news-date"><i class="fa-regular fa-calendar"></i> January 10, 2026</div>
+                        <h3><a href="media.html">KSM Hyderabad Hosts Annual Selection Trials at Nadargul Ground</a></h3>
+                        <p>Over 300 young cricketers from across Telangana participated in the annual selection trials at our Nadargul ground.</p>
+                        <a href="media.html" class="read-more">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="news-card reveal" data-delay="100">
+                    <div class="news-image">
+                        <img src="https://images.unsplash.com/photo-1540747913346-19e32dc3e97e?auto=format&fit=crop&w=800&q=80"
+                             onerror="this.onerror=null;this.src='https://images.pexels.com/photos/3628912/pexels-photo-3628912.jpeg?auto=compress&cs=tinysrgb&w=800';"
+                             alt="News">
+                        <span class="news-tag">Launch</span>
+                    </div>
+                    <div class="news-body">
+                        <div class="news-date"><i class="fa-regular fa-calendar"></i> January 6, 2026</div>
+                        <h3><a href="media.html">New Indoor Training Facility Launched at KSM Hyderabad</a></h3>
+                        <p>State-of-the-art indoor nets with bowling machines and video analysis equipment are now live at KSM Hyderabad.</p>
+                        <a href="media.html" class="read-more">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="news-card reveal" data-delay="200">
+                    <div class="news-image">
+                        <img src="https://images.unsplash.com/photo-1593766787879-1a32fb6ab2b8?auto=format&fit=crop&w=800&q=80"
+                             onerror="this.onerror=null;this.src='https://images.pexels.com/photos/3621104/pexels-photo-3621104.jpeg?auto=compress&cs=tinysrgb&w=800';"
+                             alt="News">
+                        <span class="news-tag">Event</span>
+                    </div>
+                    <div class="news-body">
+                        <div class="news-date"><i class="fa-regular fa-calendar"></i> December 28, 2025</div>
+                        <h3><a href="media.html">Cricket Masterclass Held at KSM Academy Hyderabad</a></h3>
+                        <p>An exclusive masterclass brought together top students at our Adibatla campus for a day of elite coaching and mentorship.</p>
+                        <a href="media.html" class="read-more">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="news-card reveal" data-delay="300">
+                    <div class="news-image">
+                        <img src="https://images.unsplash.com/photo-1607890262934-a0d8f6dee0a1?auto=format&fit=crop&w=800&q=80"
+                             onerror="this.onerror=null;this.src='https://images.pexels.com/photos/1661950/pexels-photo-1661950.jpeg?auto=compress&cs=tinysrgb&w=800';"
+                             alt="News">
+                        <span class="news-tag">Selection</span>
+                    </div>
+                    <div class="news-body">
+                        <div class="news-date"><i class="fa-regular fa-calendar"></i> December 21, 2025</div>
+                        <h3><a href="media.html">8 KSM Students Selected for Telangana U-19 Squad</a></h3>
+                        <p>A proud moment for KSM Hyderabad as 8 of our trainees were selected for the Telangana state under-19 squad this season.</p>
+                        <a href="media.html" class="read-more">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </article>
+            </div>
+
+            <div class="text-center" style="margin-top:40px">
+                <a href="media.html" class="btn btn-primary">View All News</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Ready to Pursue Your Cricket Dream?</h2>
+            <p>Join thousands of young cricketers who are training at KSM Cricket Academy. Register today and take your first step towards a professional cricketing career.</p>
+            <a href="registration.html" class="btn btn-accent">Register Now</a>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section style="padding:60px 0;background:var(--light-gray);">
+        <div class="container">
+            <div class="section-header" style="margin-bottom:0">
+                <span class="eyebrow">Newsletter</span>
+                <h2>Stay Updated</h2>
+                <p>Subscribe to our newsletter to receive the latest news, events and offers from KSM Cricket Academy.</p>
+                <form class="newsletter-form" data-demo>
+                    <input type="email" placeholder="Enter your email address" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col footer-about">
+                    <a href="index.html" class="logo" style="color:#fff;margin-bottom:20px">
+                        <span class="logo-icon"><i class="fa-solid fa-baseball"></i></span>
+                        <span style="color:#fff">KSM<small style="color:#fff;font-weight:500;display:block;font-size:.7rem;letter-spacing:1px;opacity:.85">CRICKET ACADEMY</small></span>
+                    </a>
+                    <p>Armed with a strong curriculum and the best from the cricket world, KSM Academy promises to polish the future of Indian cricket with our ground-breaking initiative.</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="team.html">Our Team</a></li>
+                        <li><a href="technology.html">Technology</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Resources</h4>
+                    <ul class="footer-links">
+                        <li><a href="registration.html">Registration</a></li>
+                        <li><a href="franchise.html">Franchise</a></li>
+                        <li><a href="media.html">Media</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="#">FAQs</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Contact Info</h4>
+                    <ul class="footer-contact">
+                        <li><i class="fa-solid fa-location-dot"></i> KSM Cricket Academy, Nadargul Rural, Adibatla, Telangana - 501510</li>
+                        <li><i class="fa-solid fa-phone"></i> 1800-XXX-XXXX</li>
+                        <li><i class="fa-solid fa-envelope"></i> info@ksmcricketacademy.com</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                &copy; <span id="current-year">2026</span> KSM Cricket Academy. All Rights Reserved. | Designed with <i class="fa-solid fa-heart" style="color:#f5b301"></i> for cricket
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float -->
+    <a href="https://wa.me/911800XXXXXXX" class="whatsapp-float" target="_blank" aria-label="WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script>
+        (function () {
+            var p = location.pathname;
+            if (/[^/]+\.html?$/i.test(p)) p = p.slice(0, p.lastIndexOf('/') + 1);
+            else if (!p.endsWith('/')) p += '/';
+            document.write('<base href="' + p + '">');
+        })();
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Team - KSM Cricket Academy</title>
+    <meta name="description" content="Meet the expert coaches and mentors at KSM Cricket Academy who shape the future of cricket.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-left">
+                <span><i class="fa-solid fa-phone"></i> +91 1800-XXX-XXXX</span>
+                <span><i class="fa-solid fa-envelope"></i> info@ksmcricketacademy.com</span>
+            </div>
+            <div class="top-bar-right">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <header class="site-header">
+        <div class="container nav-wrapper">
+            <a href="index.html" class="logo">
+                <span class="logo-icon"><i class="fa-solid fa-baseball"></i></span>
+                <span>KSM<small style="color:#0a1929;font-weight:600;display:block;font-size:.7rem;letter-spacing:1px">CRICKET ACADEMY</small></span>
+            </a>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="team.html" class="active">Our Team</a></li>
+                    <li><a href="technology.html">Technology</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="media.html">Media</a></li>
+                    <li><a href="franchise.html">Franchise</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="registration.html" class="nav-cta">Register</a></li>
+                </ul>
+            </nav>
+            <button class="menu-toggle" aria-label="Toggle menu"><i class="fa-solid fa-bars"></i></button>
+        </div>
+    </header>
+
+    <section class="page-banner">
+        <div class="container">
+            <h1>Our Team</h1>
+            <div class="breadcrumb">
+                <a href="index.html">Home</a> <span>/</span> <span>Our Team</span>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="section-header">
+                <span class="eyebrow">Meet the Experts</span>
+                <h2>Coaches &amp; Mentors</h2>
+                <p>Our coaching team includes certified experts from ICC, BCCI and NIS who bring world-class expertise to every centre.</p>
+            </div>
+
+            <div class="team-grid">
+                <div class="team-card">
+                    <div class="team-image">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=600&q=80" alt="Coach">
+                        <div class="team-social">
+                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h3>Rajesh Kumar</h3>
+                        <span class="role">Head Coach</span>
+                    </div>
+                </div>
+
+                <div class="team-card">
+                    <div class="team-image">
+                        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=600&q=80" alt="Coach">
+                        <div class="team-social">
+                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h3>Vikram Singh</h3>
+                        <span class="role">Batting Coach</span>
+                    </div>
+                </div>
+
+                <div class="team-card">
+                    <div class="team-image">
+                        <img src="https://images.unsplash.com/photo-1568602471122-7832951cc4c5?auto=format&fit=crop&w=600&q=80" alt="Coach">
+                        <div class="team-social">
+                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h3>Arjun Patel</h3>
+                        <span class="role">Bowling Coach</span>
+                    </div>
+                </div>
+
+                <div class="team-card">
+                    <div class="team-image">
+                        <img src="https://images.unsplash.com/photo-1502823403499-6ccfcf4fb453?auto=format&fit=crop&w=600&q=80" alt="Coach">
+                        <div class="team-social">
+                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h3>Suresh Menon</h3>
+                        <span class="role">Fielding &amp; Fitness</span>
+                    </div>
+                </div>
+
+                <div class="team-card">
+                    <div class="team-image">
+                        <img src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?auto=format&fit=crop&w=600&q=80" alt="Coach">
+                        <div class="team-social">
+                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h3>Amit Sharma</h3>
+                        <span class="role">Spin Bowling Expert</span>
+                    </div>
+                </div>
+
+                <div class="team-card">
+                    <div class="team-image">
+                        <img src="https://images.unsplash.com/photo-1599058917212-d750089bc07e?auto=format&fit=crop&w=600&q=80" alt="Coach">
+                        <div class="team-social">
+                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h3>Karan Gupta</h3>
+                        <span class="role">Wicket-Keeping Coach</span>
+                    </div>
+                </div>
+
+                <div class="team-card">
+                    <div class="team-image">
+                        <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=600&q=80" alt="Coach">
+                        <div class="team-social">
+                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h3>Neha Verma</h3>
+                        <span class="role">Sports Psychologist</span>
+                    </div>
+                </div>
+
+                <div class="team-card">
+                    <div class="team-image">
+                        <img src="https://images.unsplash.com/photo-1605462863863-10d9e47e15ee?auto=format&fit=crop&w=600&q=80" alt="Coach">
+                        <div class="team-social">
+                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h3>Dr. Priya Nair</h3>
+                        <span class="role">Physiotherapist</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <h2>Want to Join Our Coaching Team?</h2>
+            <p>We are always looking for passionate cricket coaches. Connect with us if you have the expertise.</p>
+            <a href="contact.html" class="btn btn-accent">Contact Us</a>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col footer-about">
+                    <a href="index.html" class="logo" style="color:#fff;margin-bottom:20px">
+                        <span class="logo-icon"><i class="fa-solid fa-baseball"></i></span>
+                        <span style="color:#fff">KSM<small style="color:#fff;font-weight:500;display:block;font-size:.7rem;letter-spacing:1px;opacity:.85">CRICKET ACADEMY</small></span>
+                    </a>
+                    <p>Armed with a strong curriculum and the best from the cricket world, KSM Academy promises to polish the future of Indian cricket.</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="team.html">Our Team</a></li>
+                        <li><a href="technology.html">Technology</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Resources</h4>
+                    <ul class="footer-links">
+                        <li><a href="registration.html">Registration</a></li>
+                        <li><a href="franchise.html">Franchise</a></li>
+                        <li><a href="media.html">Media</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Info</h4>
+                    <ul class="footer-contact">
+                        <li><i class="fa-solid fa-location-dot"></i> KSM Cricket Academy, Nadargul Rural, Adibatla, Telangana - 501510</li>
+                        <li><i class="fa-solid fa-phone"></i> 1800-XXX-XXXX</li>
+                        <li><i class="fa-solid fa-envelope"></i> info@ksmcricketacademy.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">&copy; <span id="current-year">2026</span> KSM Cricket Academy. All Rights Reserved.</div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/911800XXXXXXX" class="whatsapp-float" target="_blank" aria-label="WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <script src="main.js"></script>
+</body>
+</html>

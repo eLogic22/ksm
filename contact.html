@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script>
+        (function () {
+            var p = location.pathname;
+            if (/[^/]+\.html?$/i.test(p)) p = p.slice(0, p.lastIndexOf('/') + 1);
+            else if (!p.endsWith('/')) p += '/';
+            document.write('<base href="' + p + '">');
+        })();
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - KSM Cricket Academy</title>
+    <meta name="description" content="Get in touch with KSM Cricket Academy. Find our address, phone numbers and contact form.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-left">
+                <span><i class="fa-solid fa-phone"></i> +91 1800-XXX-XXXX</span>
+                <span><i class="fa-solid fa-envelope"></i> info@ksmcricketacademy.com</span>
+            </div>
+            <div class="top-bar-right">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <header class="site-header">
+        <div class="container nav-wrapper">
+            <a href="index.html" class="logo">
+                <span class="logo-icon"><i class="fa-solid fa-baseball"></i></span>
+                <span>KSM<small style="color:#0a1929;font-weight:600;display:block;font-size:.7rem;letter-spacing:1px">CRICKET ACADEMY</small></span>
+            </a>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="team.html">Our Team</a></li>
+                    <li><a href="technology.html">Technology</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="media.html">Media</a></li>
+                    <li><a href="franchise.html">Franchise</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                    <li><a href="registration.html" class="nav-cta">Register</a></li>
+                </ul>
+            </nav>
+            <button class="menu-toggle" aria-label="Toggle menu"><i class="fa-solid fa-bars"></i></button>
+        </div>
+    </header>
+
+    <section class="page-banner">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <div class="breadcrumb">
+                <a href="index.html">Home</a> <span>/</span> <span>Contact</span>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="section-header">
+                <span class="eyebrow">Get in Touch</span>
+                <h2>We'd Love to Hear From You</h2>
+                <p>Have questions about our programs, admissions or franchise opportunities? Reach out to us — we'd be happy to help.</p>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-info-item">
+                        <div class="contact-info-icon"><i class="fa-solid fa-location-dot"></i></div>
+                        <div>
+                            <h4>Our Office</h4>
+                            <p>KSM Cricket Academy, Nadargul Rural, Adibatla, Telangana - 501510, India</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-item">
+                        <div class="contact-info-icon"><i class="fa-solid fa-phone"></i></div>
+                        <div>
+                            <h4>Call Us</h4>
+                            <p>Toll Free: 1800-XXX-XXXX<br>Mobile: +91 98765-XXXXX</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-item">
+                        <div class="contact-info-icon"><i class="fa-solid fa-envelope"></i></div>
+                        <div>
+                            <h4>Email Us</h4>
+                            <p>info@ksmcricketacademy.com<br>admissions@ksmcricketacademy.com</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-item">
+                        <div class="contact-info-icon"><i class="fa-solid fa-clock"></i></div>
+                        <div>
+                            <h4>Office Hours</h4>
+                            <p>Mon - Sat: 9:00 AM - 7:00 PM<br>Sunday: Closed</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-card" style="max-width:none">
+                    <form data-demo>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="cname">Your Name *</label>
+                                <input type="text" id="cname" name="cname" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="cemail">Email *</label>
+                                <input type="email" id="cemail" name="cemail" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="cphone">Phone</label>
+                                <input type="tel" id="cphone" name="cphone">
+                            </div>
+                            <div class="form-group">
+                                <label for="csubject">Subject *</label>
+                                <input type="text" id="csubject" name="csubject" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="cmessage">Your Message *</label>
+                            <textarea id="cmessage" name="cmessage" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width:100%">Send Message</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="map-wrapper">
+                <iframe src="https://maps.google.com/maps?q=KSM+Cricket+Ground+and+Academy,+Nadargul+Rural,+Adibatla,+Telangana+501510&hl=en&z=16&output=embed" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col footer-about">
+                    <a href="index.html" class="logo" style="color:#fff;margin-bottom:20px">
+                        <span class="logo-icon"><i class="fa-solid fa-baseball"></i></span>
+                        <span style="color:#fff">KSM<small style="color:#fff;font-weight:500;display:block;font-size:.7rem;letter-spacing:1px;opacity:.85">CRICKET ACADEMY</small></span>
+                    </a>
+                    <p>Armed with a strong curriculum and the best from the cricket world, KSM Academy promises to polish the future of Indian cricket.</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="team.html">Our Team</a></li>
+                        <li><a href="technology.html">Technology</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Resources</h4>
+                    <ul class="footer-links">
+                        <li><a href="registration.html">Registration</a></li>
+                        <li><a href="franchise.html">Franchise</a></li>
+                        <li><a href="media.html">Media</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Info</h4>
+                    <ul class="footer-contact">
+                        <li><i class="fa-solid fa-location-dot"></i> KSM Cricket Academy, Nadargul Rural, Adibatla, Telangana - 501510</li>
+                        <li><i class="fa-solid fa-phone"></i> 1800-XXX-XXXX</li>
+                        <li><i class="fa-solid fa-envelope"></i> info@ksmcricketacademy.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">&copy; <span id="current-year">2026</span> KSM Cricket Academy. All Rights Reserved.</div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/911800XXXXXXX" class="whatsapp-float" target="_blank" aria-label="WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <script src="main.js"></script>
+</body>
+</html>
